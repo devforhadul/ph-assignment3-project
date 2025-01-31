@@ -11,12 +11,19 @@
       rel="stylesheet"
       type="text/css"
     />
-    <style type="text/tailwindcss">
-      @theme {
-        --color-primary-clr: #ffdc26;
-        --color-bg-color: #f9df8a;
-      }
-    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "#FFDC26",
+              "bg-color": "#F9DF8A",
+            },
+          },
+        },
+      };
+    </script>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,8 +38,8 @@
       .sora-font {
         font-family: "Sora", serif;
       }
-      .banner{
-        background-position: 70%;
+      .banner {
+        background-size: 500px;
       }
     </style>
     <script
@@ -43,75 +50,72 @@
   <body class="sora-font">
     <header>
       <!-- Navbar section -->
-      <nav class="bg-[#FFF9F4] hidden">
-        <div class="navbar flex justify-between container mx-auto">
-          <div class="flex-1">
+      <nav class="bg-[#FFF9F4]">
+        <div class="navbar flex container mx-auto">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us </a></li>
+              </ul>
+            </div>
             <img src="assets/logo-header.png" alt="" />
             <a class="btn btn-ghost text-xl">Browse4Pets</a>
           </div>
-          <div class="flex-1 hidden lg:flex">
+          <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
               <li><a>Find a pet</a></li>
               <li><a>Breeds</a></li>
               <li><a>Contact us </a></li>
             </ul>
           </div>
-          <div class="flex-1 space-x-3 hidden text-right sm:block">
+          <div class="navbar-end space-x-3 hidden text-right sm:block">
             <i class="fa-regular fa-bell"></i>
             <i class="fa-solid fa-magnifying-glass"></i>
             <a class="btn px-5 py-1 border-[#FFDC26] border-2">Login</a>
             <a class="btn bg-[#FFDC26] px-6 py-1">Register</a>
-          </div>
-          <!-- mobile hambarger manu -->
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li><a>Find a pet</a></li>
-              <li><a>Breeds</a></li>
-              <li><a>Contact us </a></li>
-            </ul>
           </div>
         </div>
       </nav>
 
       <!-- banner -->
       <div
-        class="banner container mx-auto py-12 h-[650px] bg-[url(assets/cat-big.png)] bg-left-bottom sm:bg-left-bottom sm:bg-cover bg-no-repeat  space-y-5 "
+        class="banner container mx-auto px-4 sm:px-0 pt-12 h-[650px] bg-[url(assets/cat-big.png)] bg-center sm:bg-left-bottom sm:bg-cover bg-no-repeat space-y-5"
       >
-        <h1 class="text-6xl adlam-font">
+        <h1 class="text-4xl sm:text-6xl adlam-font">
           Pamper Your Pet,<br />
           Because They Deserve <br />the Bes
         </h1>
-        <p>
-          Discover a world of treats, toys, and essentials handpicked for <br />
+        <p class="text-base">
+          Discover a world of treats, toys, and essentials handpicked for
+          <br class="hidden sm:block" />
           your furry friends. Shop now and make tails wag with joy!
         </p>
         <a class="btn bg-[#FFDC26] px-6 py-1">Find a Pet</a>
-        <!-- <div>
-          <img class="w-full sm:hidden" src="assets/cat-big.png" alt="">
-        </div> -->
       </div>
 
       <!-- Category -->
-      <div class="container mx-auto py-20 px-4 sm:px-0">
+      <div class="container mx-auto pt-0 px-4 sm:px-0 sm:py-20">
         <div>
           <h1 class="text-3xl adlam-font mb-6 sm:mb-9">Browse By Categories</h1>
         </div>
@@ -194,7 +198,7 @@
           <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
             <!-- big card -->
             <div
-              class="product-card bg-[url(assets/cute-pet-mid.png)] bg-right-bottom bg-no-repeat p-7 col-span-2 row-span-2 sm:col-span-2 sm:row-span-3 bg-[#F9DF8A] rounded-lg"
+              class="product-card bg-[url(assets/cute-pet-mid.png)] bg-right-bottom bg-no-repeat p-7 col-span-2 row-span-2 sm:col-span-2 sm:row-span-3 bg-[#F9DF8A] rounded-lg h-[400px]"
               id="big-card"
             >
               <div>
@@ -365,19 +369,80 @@
       </div>
 
       <!-- Low price -->
-       <div>
+      <div class="container mx-auto py-20 px-4 sm:px-0">
         <div>
-          <h1 class="text-3xl adlam-font mb-6 sm:mb-9">
-            Everyday low Price
-          </h1>
+          <h1 class="text-3xl adlam-font mb-6 sm:mb-9">Everyday low Price</h1>
         </div>
         <!-- offer content -->
-        <div>
-          <div></div>
-          <div></div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <!-- 1 -->
+          <div
+            class="bg-[url(assets/cute-dog-mid.png)] bg-right-bottom bg-no-repeat p-7 bg-[#F9DF8A] rounded-lg col-span-2 h-[400px]"
+          >
+            <p>Under Price</p>
+            <h2>Pet Grooming Mitt</h2>
+            <p>(Easy Hair Removal)</p>
+            <h2>$7.99</h2>
+          </div>
+          <!-- 2 -->
+          <div
+            class="bg-[url(assets/cute-pet-mid.png)] bg-right-bottom bg-no-repeat p-7 bg-[#F9DF8A] rounded-lg h-[400px]"
+          >
+            <h2>T-Shirt for Dogs</h2>
+            <h3>$7.99</h3>
+          </div>
         </div>
-       </div>
+      </div>
+
+      <!-- news letter section -->
+
+      <div
+        class="news-letter bg-[#FFF9F4] flex flex-col sm:flex-row items-center m-7 sm:m-20 p-5 sm:p-10 rounded-xl text-center sm:text-left absolute"
+      >
+        <div class="flex-2">
+          <img src="assets/cute-pet-mid.png" alt="" />
+        </div>
+        <div class="flex-1 ml-12 space-y-5">
+          <h2 class="text-2xl sm:text-4xl font-bold adlam-font">
+            Get Pawsome News!
+          </h2>
+          <p>Exclusive training tips, ticks, product deals and more.</p>
+          <input
+            class="py-3 px-2 bg-white outline-none w-[60%] rounded-md"
+            placeholder="Enter Email..."
+            type="email"
+            name="email"
+            id=""
+          />
+          <br />
+          <a class="btn bg-[#FFDC26] px-6 py-1">Subscribe</a>
+        </div>
+      </div>
+
     </main>
-    <footer></footer>
+    <footer class="footer pt-60 bg-[#ffdc2680] text-neutral-content p-10">
+      <aside class="text-black">
+        <img src="assets/logo-footer.png" alt="">
+        <h2 class="inline">Browse4Pets</h2>
+        <p class="w-[300px]">
+          Discover a world of treats, toys, and essentials handpicked for your furry friends
+        </p>
+      </aside>
+      <nav class="text-black">
+        <!-- <h6 class="footer-title">Find a Pet</h6> -->
+        <a class="link link-hover">Find a Pet</a>
+        <a class="link link-hover">Breeds</a>
+        <a class="link link-hover">Contact us</a>
+      </nav>
+      <nav class="text-black">
+        <h6 class="footer-title">Follow Us</h6>
+        <div class="grid grid-flow-col gap-4">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>

@@ -41,6 +41,11 @@
       .banner {
         background-size: 500px;
       }
+      .news-letter {
+        top: 50%; /* Moves it up by 220px from the center */
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     </style>
     <script
       src="https://kit.fontawesome.com/975002c4ee.js"
@@ -111,7 +116,7 @@
           <br class="hidden sm:block" />
           your furry friends. Shop now and make tails wag with joy!
         </p>
-        <a class="btn bg-[#FFDC26] px-6 py-1">Find a Pet</a>
+        <a class="btn bg-[#FFDC26] px-6 py-1 animate-bounce">Find a Pet</a>
       </div>
 
       <!-- Category -->
@@ -198,33 +203,18 @@
           <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
             <!-- big card -->
             <div
-              class="product-card bg-[url(assets/cute-pet-mid.png)] bg-right-bottom bg-no-repeat p-7 col-span-2 row-span-2 sm:col-span-2 sm:row-span-3 bg-[#F9DF8A] rounded-lg h-[400px]"
+              class="product-card flex p-8 col-span-2 row-span-2 sm:col-span-2 sm:row-span-3 bg-[#F9DF8A] rounded-lg bg[230px_100px]"
               id="big-card"
             >
-              <div>
+              <div class="space-y-5">
                 <h2 class="text-3xl adlam-font">T-Shirt For Dogs</h2>
                 <p>
                   Discover a world of treats, toys and essentials handpicked for
                 </p>
                 <div class="btn">Show Now</div>
               </div>
-            </div>
-
-            <!-- card 1 -->
-            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
-              <div>
-                <img
-                  class="p-5 bg-[#FFF9F4] rounded-xl"
-                  src="assets/cat-cartoon.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <p class="text-base">
-                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
-                </p>
-                <h2 class="text-xl font-medium">Pet Bed</h2>
-                <h4 class="text-base font-medium">$39.99</h4>
+              <div class="self-end">
+                <img class="" src="assets/cute-pet-mid.png" alt="" />
               </div>
             </div>
 
@@ -233,7 +223,127 @@
               <div>
                 <img
                   class="p-5 bg-[#FFF9F4] rounded-xl"
-                  src="assets/cat-cartoon.png"
+                  src="assets/dog-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="text-base">
+                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
+                </p>
+                <h2 class="text-xl font-medium">Pet Bed</h2>
+                <h4 class="text-base font-medium">$39.99</h4>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
+              <div>
+                <img
+                  class="p-5 bg-[#FFF9F4] rounded-xl"
+                  src="assets/fish-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="text-base">
+                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
+                </p>
+                <h2 class="text-xl font-medium">Pet Bed</h2>
+                <h4 class="text-base font-medium">$39.99</h4>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
+              <div>
+                <img
+                  class="p-5 bg-[#FFF9F4] rounded-xl"
+                  src="assets/bird-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="text-base">
+                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
+                </p>
+                <h2 class="text-xl font-medium">Pet Bed</h2>
+                <h4 class="text-base font-medium">$39.99</h4>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
+              <div>
+                <img
+                  class="p-5 bg-[#FFF9F4] rounded-xl"
+                  src="assets/rabbit-cartoon.png "
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="text-base">
+                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
+                </p>
+                <h2 class="text-xl font-medium">Pet Bed</h2>
+                <h4 class="text-base font-medium">$39.99</h4>
+              </div>
+            </div>
+            <!-- card 5 -->
+            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
+              <div>
+                <img
+                  class="p-5 bg-[#FFF9F4] rounded-xl"
+                  src="assets/pet-couch.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="text-base">
+                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
+                </p>
+                <h2 class="text-xl font-medium">Pet Bed</h2>
+                <h4 class="text-base font-medium">$39.99</h4>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
+              <div>
+                <img
+                  class="p-5 bg-[#FFF9F4] rounded-xl"
+                  src="assets/fish-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="text-base">
+                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
+                </p>
+                <h2 class="text-xl font-medium">Pet Bed</h2>
+                <h4 class="text-base font-medium">$39.99</h4>
+              </div>
+            </div>
+            <!-- card 7 -->
+            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
+              <div>
+                <img
+                  class="p-5 bg-[#FFF9F4] rounded-xl"
+                  src="assets/pet-couch.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="text-base">
+                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
+                </p>
+                <h2 class="text-xl font-medium">Pet Bed</h2>
+                <h4 class="text-base font-medium">$39.99</h4>
+              </div>
+            </div>
+            <!-- card 8 -->
+            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
+              <div>
+                <img
+                  class="p-5 bg-[#FFF9F4] rounded-xl"
+                  src="assets/rabbit-cartoon.png"
                   alt=""
                 />
               </div>
@@ -262,108 +372,132 @@
                 <h4 class="text-base font-medium">$39.99</h4>
               </div>
             </div>
-            <!-- card 1 -->
-            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
-              <div>
-                <img
-                  class="p-5 bg-[#FFF9F4] rounded-xl"
-                  src="assets/cat-cartoon.png"
-                  alt=""
-                />
+          </div>
+        </div>
+      </div>
+
+      <!-- Faq section -->
+      <div class="container mx-auto py-20 px-4 sm:px-0">
+        <div>
+          <h1 class="text-3xl adlam-font mb-6 sm:mb-9">
+            Frequently Ask and Questions
+          </h1>
+        </div>
+        <div
+          class="grid grid-cols-1 gap-8 sm:grid-cols-2 items-center justify-between"
+        >
+          <!-- 1 -->
+          <div class="space-y-5">
+            <!-- collapse 1 -->
+            <div
+              class="collapse rounded-md shadow-md collapse-arrow bg-base-200"
+            >
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                How can I keep my pet's teeth healthy?
               </div>
-              <div>
-                <p class="text-base">
-                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
+              <div class="collapse-content">
+                <p>
+                  Morbi sit amet neque nec magna maximus euismod sit amet non
+                  elit. Mauris efficitur odio vel augue lobortis ultrices. Etiam
+                  lobortis turpis tellus, eu faucibus nulla porttitor et. Morbi
+                  sit amet gravida ex.
                 </p>
-                <h2 class="text-xl font-medium">Pet Bed</h2>
-                <h4 class="text-base font-medium">$39.99</h4>
               </div>
             </div>
-            <!-- card 1 -->
-            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
-              <div>
-                <img
-                  class="p-5 bg-[#FFF9F4] rounded-xl"
-                  src="assets/cat-cartoon.png"
-                  alt=""
-                />
+            <!-- collapse 1 -->
+            <div
+              class="collapse rounded-md shadow-md collapse-arrow bg-base-200"
+            >
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                How can I keep my pet's teeth healthy?
               </div>
-              <div>
-                <p class="text-base">
-                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
+              <div class="collapse-content">
+                <p>
+                  Morbi sit amet neque nec magna maximus euismod sit amet non
+                  elit. Mauris efficitur odio vel augue lobortis ultrices. Etiam
+                  lobortis turpis tellus, eu faucibus nulla porttitor et. Morbi
+                  sit amet gravida ex.
                 </p>
-                <h2 class="text-xl font-medium">Pet Bed</h2>
-                <h4 class="text-base font-medium">$39.99</h4>
               </div>
             </div>
-            <!-- card 1 -->
-            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
-              <div>
-                <img
-                  class="p-5 bg-[#FFF9F4] rounded-xl"
-                  src="assets/cat-cartoon.png"
-                  alt=""
-                />
+            <!-- collapse 1 -->
+            <div
+              class="collapse rounded-md shadow-md collapse-arrow bg-base-200"
+            >
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                How can I keep my pet's teeth healthy?
               </div>
-              <div>
-                <p class="text-base">
-                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
+              <div class="collapse-content">
+                <p>
+                  Morbi sit amet neque nec magna maximus euismod sit amet non
+                  elit. Mauris efficitur odio vel augue lobortis ultrices. Etiam
+                  lobortis turpis tellus, eu faucibus nulla porttitor et. Morbi
+                  sit amet gravida ex.
                 </p>
-                <h2 class="text-xl font-medium">Pet Bed</h2>
-                <h4 class="text-base font-medium">$39.99</h4>
               </div>
             </div>
-            <!-- card 1 -->
-            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
-              <div>
-                <img
-                  class="p-5 bg-[#FFF9F4] rounded-xl"
-                  src="assets/cat-cartoon.png"
-                  alt=""
-                />
+            <!-- collapse 1 -->
+            <div
+              class="collapse rounded-md shadow-md collapse-arrow bg-base-200"
+            >
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                How can I keep my pet's teeth healthy?
               </div>
-              <div>
-                <p class="text-base">
-                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
+              <div class="collapse-content">
+                <p>
+                  Morbi sit amet neque nec magna maximus euismod sit amet non
+                  elit. Mauris efficitur odio vel augue lobortis ultrices. Etiam
+                  lobortis turpis tellus, eu faucibus nulla porttitor et. Morbi
+                  sit amet gravida ex.
                 </p>
-                <h2 class="text-xl font-medium">Pet Bed</h2>
-                <h4 class="text-base font-medium">$39.99</h4>
               </div>
             </div>
-            <!-- card 1 -->
-            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
-              <div>
-                <img
-                  class="p-5 bg-[#FFF9F4] rounded-xl"
-                  src="assets/cat-cartoon.png"
-                  alt=""
-                />
+            <!-- collapse 1 -->
+            <div
+              class="collapse rounded-md shadow-md collapse-arrow bg-base-200"
+            >
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                How can I keep my pet's teeth healthy?
               </div>
-              <div>
-                <p class="text-base">
-                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
+              <div class="collapse-content">
+                <p>
+                  Morbi sit amet neque nec magna maximus euismod sit amet non
+                  elit. Mauris efficitur odio vel augue lobortis ultrices. Etiam
+                  lobortis turpis tellus, eu faucibus nulla porttitor et. Morbi
+                  sit amet gravida ex.
                 </p>
-                <h2 class="text-xl font-medium">Pet Bed</h2>
-                <h4 class="text-base font-medium">$39.99</h4>
               </div>
             </div>
-            <!-- card 1 -->
-            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg">
-              <div>
-                <img
-                  class="p-5 bg-[#FFF9F4] rounded-xl"
-                  src="assets/cat-cartoon.png"
-                  alt=""
-                />
+            <!-- collapse 1 -->
+            <div
+              class="collapse rounded-md shadow-md collapse-arrow bg-base-200"
+            >
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                How can I keep my pet's teeth healthy?
               </div>
-              <div>
-                <p class="text-base">
-                  <i class="fa-solid fa-star text-[#FFDC26]"></i> 4.5
+              <div class="collapse-content">
+                <p>
+                  Morbi sit amet neque nec magna maximus euismod sit amet non
+                  elit. Mauris efficitur odio vel augue lobortis ultrices. Etiam
+                  lobortis turpis tellus, eu faucibus nulla porttitor et. Morbi
+                  sit amet gravida ex.
                 </p>
-                <h2 class="text-xl font-medium">Pet Bed</h2>
-                <h4 class="text-base font-medium">$39.99</h4>
               </div>
             </div>
+          </div>
+          <!-- 2 -->
+          <div class="justify-self-center">
+            <img
+              class="w-96 h-auto bg-cover rounded-xl"
+              src="assets/pet-faq-img.jpg"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -377,19 +511,29 @@
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <!-- 1 -->
           <div
-            class="bg-[url(assets/cute-dog-mid.png)] bg-right-bottom bg-no-repeat p-7 bg-[#F9DF8A] rounded-lg col-span-2 h-[400px] bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]"
+            class="grid grid-cols-3 items-center justify-between sm:col-span-2 rounded-lg bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]"
           >
-            <p>Under Price</p>
-            <h2>Pet Grooming Mitt</h2>
-            <p>(Easy Hair Removal)</p>
-            <h2>$7.99</h2>
+            <div class="ml-10 sm:ml-20">
+              <p>Under Price</p>
+              <h2 class="text-3xl adlam-font">Pet Grooming Mitt</h2>
+              <p>(Easy Hair Removal)</p>
+              <h2 class="text-6xl adlam-font">$7.99</h2>
+            </div>
+            <div class="col-span-2 place-self-end">
+              <img class="" src="assets/cute-dog-mid.png" alt="" />
+            </div>
           </div>
           <!-- 2 -->
           <div
-            class="bg-[url(assets/cute-pet-mid.png)] bg-right-bottom bg-no-repeat p-7 bg-[#F9DF8A] rounded-lg h-[400px] bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A]"
+            class="flex flex-col items-start justify-between p-7 rounded-lg bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A]"
           >
-            <h2>T-Shirt for Dogs</h2>
-            <h3>$7.99</h3>
+            <div>
+              <h2 class="text-3xl adlam-font">T-Shirt for Dogs</h2>
+              <h3 class="text-6xl adlam-font text-[#FFDC26]">$7.99</h3>
+            </div>
+            <div class="self-end">
+              <img src="assets/cute-pet-mid.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -397,7 +541,7 @@
       <!-- news letter section -->
       <div class="relative">
         <div
-          class="news-letter container mx-5 sm:mx-10 absolute sm:-top-[220px] bg-[#FFF9F4] flex flex-col gap-8 sm:flex-row items-center p-5 sm:p-10 rounded-xl text-center sm:text-left absolute"
+          class="news-letter absolute container p-5 absolute  bg-[#FFF9F4] flex flex-col gap-8 sm:flex-row items-center rounded-xl text-center sm:text-left"
         >
           <div class="flex-2">
             <img src="assets/cute-pet-mid.png" alt="" />
@@ -421,7 +565,9 @@
       </div>
     </main>
 
-    <footer class="footer pt-80 bg-[#ffdc2680] text-neutral-content p-10">
+    <footer
+      class="footer relativef pt-80 bg-[#ffdc2680] text-neutral-content p-10"
+    >
       <aside class="text-black">
         <img src="assets/logo-footer.png" alt="" />
         <h2 class="inline">Browse4Pets</h2>

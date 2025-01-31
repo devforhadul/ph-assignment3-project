@@ -369,7 +369,7 @@
       </div>
 
       <!-- Low price -->
-      <div class="container mx-auto py-20 px-4 sm:px-0">
+      <div class="container mx-auto pb-80 py-20 px-4 sm:px-0">
         <div>
           <h1 class="text-3xl adlam-font mb-6 sm:mb-9">Everyday low Price</h1>
         </div>
@@ -377,7 +377,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <!-- 1 -->
           <div
-            class="bg-[url(assets/cute-dog-mid.png)] bg-right-bottom bg-no-repeat p-7 bg-[#F9DF8A] rounded-lg col-span-2 h-[400px]"
+            class="bg-[url(assets/cute-dog-mid.png)] bg-right-bottom bg-no-repeat p-7 bg-[#F9DF8A] rounded-lg col-span-2 h-[400px] bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]"
           >
             <p>Under Price</p>
             <h2>Pet Grooming Mitt</h2>
@@ -386,7 +386,7 @@
           </div>
           <!-- 2 -->
           <div
-            class="bg-[url(assets/cute-pet-mid.png)] bg-right-bottom bg-no-repeat p-7 bg-[#F9DF8A] rounded-lg h-[400px]"
+            class="bg-[url(assets/cute-pet-mid.png)] bg-right-bottom bg-no-repeat p-7 bg-[#F9DF8A] rounded-lg h-[400px] bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A]"
           >
             <h2>T-Shirt for Dogs</h2>
             <h3>$7.99</h3>
@@ -395,47 +395,48 @@
       </div>
 
       <!-- news letter section -->
-
-      <div
-        class="news-letter bg-[#FFF9F4] flex flex-col sm:flex-row items-center m-7 sm:m-20 p-5 sm:p-10 rounded-xl text-center sm:text-left absolute"
-      >
-        <div class="flex-2">
-          <img src="assets/cute-pet-mid.png" alt="" />
-        </div>
-        <div class="flex-1 ml-12 space-y-5">
-          <h2 class="text-2xl sm:text-4xl font-bold adlam-font">
-            Get Pawsome News!
-          </h2>
-          <p>Exclusive training tips, ticks, product deals and more.</p>
-          <input
-            class="py-3 px-2 bg-white outline-none w-[60%] rounded-md"
-            placeholder="Enter Email..."
-            type="email"
-            name="email"
-            id=""
-          />
-          <br />
-          <a class="btn bg-[#FFDC26] px-6 py-1">Subscribe</a>
+      <div class="relative">
+        <div
+          class="news-letter container mx-5 sm:mx-10 absolute sm:-top-[220px] bg-[#FFF9F4] flex flex-col gap-8 sm:flex-row items-center p-5 sm:p-10 rounded-xl text-center sm:text-left absolute"
+        >
+          <div class="flex-2">
+            <img src="assets/cute-pet-mid.png" alt="" />
+          </div>
+          <div class="flex-1 ml-12 space-y-5">
+            <h2 class="text-2xl sm:text-4xl font-bold adlam-font">
+              Get Pawsome News!
+            </h2>
+            <p>Exclusive training tips, ticks, product deals and more.</p>
+            <input
+              class="py-3 px-2 bg-white outline-none w-[60%] rounded-md"
+              placeholder="Enter Email..."
+              type="email"
+              name="email"
+              id=""
+            />
+            <br />
+            <a class="btn bg-[#FFDC26] px-6 py-1">Subscribe</a>
+          </div>
         </div>
       </div>
-
     </main>
-    <footer class="footer pt-60 bg-[#ffdc2680] text-neutral-content p-10">
+
+    <footer class="footer pt-80 bg-[#ffdc2680] text-neutral-content p-10">
       <aside class="text-black">
-        <img src="assets/logo-footer.png" alt="">
+        <img src="assets/logo-footer.png" alt="" />
         <h2 class="inline">Browse4Pets</h2>
         <p class="w-[300px]">
-          Discover a world of treats, toys, and essentials handpicked for your furry friends
+          Discover a world of treats, toys, and essentials handpicked for your
+          furry friends
         </p>
       </aside>
       <nav class="text-black">
-        <!-- <h6 class="footer-title">Find a Pet</h6> -->
         <a class="link link-hover">Find a Pet</a>
         <a class="link link-hover">Breeds</a>
         <a class="link link-hover">Contact us</a>
       </nav>
       <nav class="text-black">
-        <h6 class="footer-title">Follow Us</h6>
+        <h6 class="footer-title text-black">Follow Us</h6>
         <div class="grid grid-flow-col gap-4">
           <a href="#"><i class="fa-brands fa-facebook"></i></a>
           <a href="#"><i class="fa-brands fa-instagram"></i></a>

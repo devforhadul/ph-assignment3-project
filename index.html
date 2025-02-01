@@ -56,9 +56,10 @@
     <header>
       <!-- Navbar section -->
       <nav class="bg-[#FFF9F4]">
-        <div class="navbar flex container mx-auto">
+        <div class="navbar flex container mx-auto py-3">
           <div class="navbar-start">
-            <div class="dropdown">
+            <!-- mobile navigation memu -->
+            <!-- <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -83,9 +84,11 @@
                 <li><a>Breeds</a></li>
                 <li><a>Contact us </a></li>
               </ul>
-            </div>
+            </div> -->
             <img src="assets/logo-header.png" alt="" />
-            <a class="btn btn-ghost text-xl">Browse4Pets</a>
+            <a class="ml-3 text-xl"
+              >Browse<span class="text-[#FFDC26]">4</span>Pets</a
+            >
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -94,12 +97,16 @@
               <li><a>Contact us </a></li>
             </ul>
           </div>
-          <div class="navbar-end space-x-3 hidden text-right sm:block">
-            <i class="fa-regular fa-bell"></i>
+          <div class="navbar-end">
+            <div class="space-x-3 hidden text-right sm:block">
+             <i class="fa-regular fa-bell"></i>
             <i class="fa-solid fa-magnifying-glass"></i>
-            <a class="btn px-5 py-1 border-[#FFDC26] border-2">Login</a>
+            <a class="btn px-5 py-1 border-[#FFDC26] hover:bg-[#FFDC26] hover:border-none border-2 bg-transparent">Login</a>
             <a class="btn bg-[#FFDC26] px-6 py-1">Register</a>
+            </div>
+            <i class="fa-solid fa-bars text-3xl sm:hidden"></i>
           </div>
+          
         </div>
       </nav>
 
@@ -356,7 +363,9 @@
               </div>
             </div>
             <!-- card 9 -->
-            <div class="flex items-center gap-4 bg-white border p-4 rounded-lg hidden sm:inline-flex">
+            <div
+              class="flex items-center gap-4 bg-white border p-4 rounded-lg hidden sm:inline-flex"
+            >
               <div>
                 <img
                   class="p-5 bg-[#FFF9F4] rounded-xl"
@@ -411,7 +420,7 @@
             >
               <input type="radio" name="my-accordion-2" />
               <div class="collapse-title text-xl font-medium">
-                How can I keep my pet's teeth healthy?
+                How often should i groom my pet?
               </div>
               <div class="collapse-content">
                 <p>
@@ -428,7 +437,7 @@
             >
               <input type="radio" name="my-accordion-2" />
               <div class="collapse-title text-xl font-medium">
-                How can I keep my pet's teeth healthy?
+                What vaccinations does my pet need?
               </div>
               <div class="collapse-content">
                 <p>
@@ -445,7 +454,7 @@
             >
               <input type="radio" name="my-accordion-2" />
               <div class="collapse-title text-xl font-medium">
-                How can I keep my pet's teeth healthy?
+                How often should i groom my pet?
               </div>
               <div class="collapse-content">
                 <p>
@@ -462,7 +471,7 @@
             >
               <input type="radio" name="my-accordion-2" />
               <div class="collapse-title text-xl font-medium">
-                How can I keep my pet's teeth healthy?
+                What vaccinations does my pet need?
               </div>
               <div class="collapse-content">
                 <p>
@@ -479,7 +488,7 @@
             >
               <input type="radio" name="my-accordion-2" />
               <div class="collapse-title text-xl font-medium">
-                How can I keep my pet's teeth healthy?
+                What vaccinations does my pet need?
               </div>
               <div class="collapse-content">
                 <p>
@@ -511,15 +520,15 @@
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <!-- 1 -->
           <div
-            class="grid grid-cols-3 items-center justify-between sm:col-span-2 rounded-lg bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]"
+            class="flex justify-center p-7 items-start sm:items-center sm:col-span-2 rounded-lg bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]"
           >
-            <div class="ml-10 sm:ml-20">
-              <p>Under Price</p>
-              <h2 class="text-3xl adlam-font">Pet Grooming Mitt</h2>
-              <p>(Easy Hair Removal)</p>
+            <div class="space-y-3 sm:space-y-4">
+              <p class="hidden sm:block">Under Price</p>
+              <h2 class="text-xl sm:text-3xl adlam-font">Pet Grooming Mitt</h2>
+              <p class="text-white hidden sm:block">(Easy Hair Removal)</p>
               <h2 class="text-6xl adlam-font">$7.99</h2>
             </div>
-            <div class="col-span-2 place-self-end">
+            <div class="place-self-end">
               <img class="" src="assets/cute-dog-mid.png" alt="" />
             </div>
           </div>
@@ -541,7 +550,7 @@
       <!-- news letter section -->
       <div class="relative mx-4">
         <div
-          class="news-letter absolute container -top-[50px] sm:top-0  p-5 absolute bg-[#FFF9F4] flex flex-col gap-8 sm:flex-row items-center rounded-xl text-center sm:text-left"
+          class="news-letter absolute container -top-[50px] sm:top-0 p-5 absolute bg-[#FFF9F4] flex flex-col gap-8 sm:flex-row items-center rounded-xl text-center sm:text-left"
         >
           <div class="flex-2">
             <img src="assets/cute-pet-mid.png" alt="" />
@@ -552,7 +561,7 @@
             </h2>
             <p>Exclusive training tips, ticks, product deals and more.</p>
             <input
-              class="py-3 px-2 bg-white outline-none w-[60%] rounded-md"
+              class="py-3 sm:py-5 px-2 sm:px-4 bg-white outline-none w-[60%] rounded-md"
               placeholder="Enter Email..."
               type="email"
               name="email"
@@ -569,8 +578,12 @@
       class="footer relativef pt-80 bg-[#ffdc2680] text-neutral-content p-10"
     >
       <aside class="text-black">
-        <img src="assets/logo-footer.png" alt="" />
-        <h2 class="inline">Browse4Pets</h2>
+        <div class="flex items-center gap-2">
+          <img src="assets/logo-footer.png" alt="" />
+          <h2 class="text-2xl">
+            Browse<span class="text-[#FFDC26]">4</span>Pets
+          </h2>
+        </div>
         <p class="w-[300px]">
           Discover a world of treats, toys, and essentials handpicked for your
           furry friends
@@ -584,9 +597,13 @@
       <nav class="text-black">
         <h6 class="footer-title text-black">Follow Us</h6>
         <div class="grid grid-flow-col gap-4">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.facebook.com/forhadul75/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/devforhadul/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
           <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </nav>
